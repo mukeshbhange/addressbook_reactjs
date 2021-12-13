@@ -1,10 +1,13 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link,useHistory } from 'react-router-dom';
 import logo from "../assets/logo.png";
 import "../styles/Navbar.css"
 
-const Navbar = () => {
+
+
+
+const Navbar = (props) => {
     return (
         <header className="header header-container">
             <Link to="/" className="logo-content-wrapper" >
@@ -14,6 +17,8 @@ const Navbar = () => {
                     <p className="logo-text logo-text-color">Book</p>
                 </div>
             </Link>
+            <h2 className='navHeading'>{props.title}</h2>
+            <Link to={props.to} className='navbarButton'>{props.button_name}</Link>
         </header>
     )
 }

@@ -1,0 +1,19 @@
+form.row {
+    background: aliceblue;
+    width: 30%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15%;
+    padding: 30px;
+}
+
+.loginlabel {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+}
+
+.loginButton {
+    display: flex;
+    justify-content: center;
+}
